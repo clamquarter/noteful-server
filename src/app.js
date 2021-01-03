@@ -4,8 +4,8 @@ const morgan = require("morgan");
 const cors = require("cors");
 const helmet = require("helmet");
 const { NODE_ENV } = require("./config");
-const folderRouter = require('./folder/folder-router');
-const noteRouter = require('./note/note-router');
+const folderRouter = require('./folder/router');
+const noteRouter = require('./note/router');
 
 const morganOption = NODE_ENV === "production" ? "tiny" : "common";
 
