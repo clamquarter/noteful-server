@@ -8,3 +8,8 @@ const db = knex({
 });
 
 app.set('db', db);
+
+app.listen(PORT, () => {
+  console.log(DATABASE_URL)
+  console.log(`Express server is listening at http://localhost:${PORT}`);
+});
